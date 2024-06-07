@@ -6,12 +6,11 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 11:32:13 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/12 12:40:03 by ntalmon          ###   ########.fr       */
+/*   Updated: 2023/12/14 13:05:17 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
-#include <stdio.h>
+#include "../includes/so_long.h"
 
 int	get_string_length(const char *str)
 {

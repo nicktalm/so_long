@@ -6,13 +6,11 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 16:41:10 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/12 17:00:20 by ntalmon          ###   ########.fr       */
+/*   Updated: 2023/12/14 13:05:20 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
-#include <stdio.h>
-#include <fcntl.h>
+#include "../includes/so_long.h"
 
 char	**start(int argc, char **argv)
 {

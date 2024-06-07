@@ -6,11 +6,11 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 20:11:23 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/12 16:00:44 by ntalmon          ###   ########.fr       */
+/*   Updated: 2023/12/14 13:05:34 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 void	playerup(t_vars *vars)
 {
@@ -87,12 +87,16 @@ void	key_overview(mlx_key_data_t keydata, void	*param)
 		mlx_close_window(data->mlx);
 		exit_and_free(data);
 	}
-	if (keydata.key == MLX_KEY_W && keydata.action == MLX_PRESS)
+	if (keydata.key == MLX_KEY_W && (keydata.action == MLX_PRESS
+			|| keydata.action == MLX_REPEAT))
 		playerup(data);
-	if (keydata.key == MLX_KEY_S && keydata.action == MLX_PRESS)
+	if (keydata.key == MLX_KEY_S && (keydata.action == MLX_PRESS
+			|| keydata.action == MLX_REPEAT))
 		playerdown(data);
-	if (keydata.key == MLX_KEY_A && keydata.action == MLX_PRESS)
+	if (keydata.key == MLX_KEY_A && (keydata.action == MLX_PRESS
+			|| keydata.action == MLX_REPEAT))
 		playerleft(data);
-	if (keydata.key == MLX_KEY_D && keydata.action == MLX_PRESS)
+	if (keydata.key == MLX_KEY_D && (keydata.action == MLX_PRESS
+			|| keydata.action == MLX_REPEAT))
 		playerright(data);
 }

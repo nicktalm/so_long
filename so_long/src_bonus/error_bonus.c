@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   error.c                                            :+:      :+:    :+:   */
+/*   error_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:22:05 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/12 17:00:07 by ntalmon          ###   ########.fr       */
+/*   Updated: 2023/12/14 11:35:49 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
-#include <stdio.h>
+#include "../includes/so_long_bonus.h"
 
 int	error_characters(int *e, int *c, int *p, char **map)
 {

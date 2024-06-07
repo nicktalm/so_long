@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:26:40 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/04 16:12:06 by ntalmon          ###   ########.fr       */
+/*   Updated: 2023/12/14 11:27:18 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include <stdio.h>
 
 char	*get_next_line(int fd);
 char	*readtext(int fd, char *text);

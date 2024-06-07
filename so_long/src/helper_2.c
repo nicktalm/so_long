@@ -6,11 +6,11 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 20:17:13 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/12 18:06:04 by ntalmon          ###   ########.fr       */
+/*   Updated: 2023/12/14 13:05:32 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 void	check_z_instances(t_vars *data)
 {

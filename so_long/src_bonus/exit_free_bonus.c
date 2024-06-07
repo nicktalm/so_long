@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   exit_free.c                                        :+:      :+:    :+:   */
+/*   exit_free_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 13:58:57 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/13 11:52:40 by ntalmon          ###   ########.fr       */
+/*   Updated: 2023/12/14 11:35:52 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long_bonus.h"
 
 void	exit_and_collectible(t_vars *data)
 {
+	data->steps++;
+	display_in_window(data);
+	ft_printf("move: %d\n", data->steps);
 	if (data->map[data->p_h][data->p_w] == 'E')
 	{
-		data->steps++;
 		if (data->coll_nbr == 0)
 		{
-			mlx_close_window(data->mlx);
-			ft_printf("\nCongrats, you won with %i moves!\n\n", data->steps);
-			exit_and_free(data);
+			you_win(data);
 		}
 	}
+	if (data->map[data->p_h][data->p_w] == 'X')
+		you_died(data);
 	if (data->map[data->p_h][data->p_w] == 'C')
 	{
 		mlx_image_to_window(data->mlx, data->image[S],
@@ -31,9 +33,6 @@ void	exit_and_collectible(t_vars *data)
 		data->map[data->p_h][data->p_w] = '0';
 		check_z_instances(data);
 	}
-	data->steps++;
-	ft_printf("move: %d\n", data->steps);
-	display_in_window(data);
 }
 
 void	display_in_window(t_vars *data)

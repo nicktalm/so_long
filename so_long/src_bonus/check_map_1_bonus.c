@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_map_1.c                                      :+:      :+:    :+:   */
+/*   check_map_1_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 11:24:58 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/12 13:51:38 by ntalmon          ###   ########.fr       */
+/*   Updated: 2023/12/14 11:35:41 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "so_long.h"
+#include "../includes/so_long_bonus.h"
 
 int	check_map_path(char **map, t_point	size)
 {
@@ -39,6 +38,7 @@ void	fill(char **map, t_point size, t_point position_p)
 	if (position_p.y < 0 || position_p.y >= size.y
 		|| position_p.x < 0 || position_p.x >= size.x
 		|| map[position_p.y][position_p.x] == '1'
+		|| map[position_p.y][position_p.x] == 'X'
 		|| map[position_p.y][position_p.x] == 'F')
 		return ;
 	map[position_p.y][position_p.x] = 'F';
