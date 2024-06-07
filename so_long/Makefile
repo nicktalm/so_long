@@ -28,7 +28,7 @@ OBJSB = $(SRCSB:.c=.o)
 LIBFT = lib/libft
 PRINTF = lib/printf
 GET_NEXT = lib/get_next_line
-MLX = lib/libmlx
+MLX = lib/libmlx_
 INLIBFT = -L $(LIBFT) -lft
 INPRINF = -L $(PRINTF) -lftprintf
 INGET_NEXT = -L $(GET_NEXT) -lget_next_line

@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 11:25:28 by ntalmon           #+#    #+#             */
-/*   Updated: 2023/12/14 13:03:07 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/06/07 13:59:12 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include "../lib/get_next_line/get_next_line.h"
 # include "../lib/libft/libft.h"
 # include "../lib/printf/ft_printf.h"
-# include "../lib/libmlx/include/MLX42/MLX42.h"
+# include "../lib/libmlx_/include/MLX42/MLX42.h"
 
 # define TEXTURES			5
 # define S					0
